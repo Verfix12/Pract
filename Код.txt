@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Labor4._4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i, j, n, m;
+            double s;
+            Console.Write("Введите значение n = ");
+            n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите значение m = ");
+            m = Convert.ToInt32(Console.ReadLine());
+            s = 0;
+            for (i = 1; i <= n; i++)
+                for (j = 1; j <= m; j++)
+                    s = s + (1 / Math.Pow((3 * i + j), 2));
+            Console.Write(s);
+            Console.ReadKey();
+        }
+    }
+}
